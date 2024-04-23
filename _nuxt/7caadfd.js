@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[57],{394:function(t,n,c){"use strict";c.r(n);var e=c(6),component=Object(e.a)({},(function(){this._self._c;return this._m(0)}),[function(){var t=this._self._c;return t("section",{staticClass:"content"},[t("h1",[this._v("Дебетовая карта")])])}],!1,null,null,null);n.default=component.exports}}]);
