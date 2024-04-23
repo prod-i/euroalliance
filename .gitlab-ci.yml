@@ -1,0 +1,14 @@
+stages:
+  - nodejs-20-eslint
+  - semantic-release
+  - kaniko-build-image
+
+include:
+  - project: 'devops/cicd'
+    ref: master
+    file:
+      - '.gitlab/ci/nodejs-20-eslint.gitlab-ci.yml'
+      - '.gitlab/ci/semantic-release.gitlab-ci.yml'
+      - '.gitlab/ci/kaniko-build-image.gitlab-ci.yml'
+
+#

@@ -1,0 +1,96 @@
+{
+  "framework": "vue",
+  "name": "ui-library-frontend",
+  "version": "0.0.1",
+  "description-markup": "markdown",
+  "contributions": {
+    "html": {
+      "vue-components": [
+        {
+          "name": "UiImage",
+          "description": "Commonly used image.",
+          "props": [
+            {
+              "name": "loading",
+              "type": "'lazy' | 'eager'",
+              "default": "lazy",
+              "description": "Отложенная загрузка или нет?\n? lazy || eager"
+            },
+            {
+              "name": "fileData",
+              "type": "{fileId: number, [key: string]: any}",
+              "default": "{}",
+              "description": "Файл id изображения"
+            },
+            {
+              "name": "pictureType",
+              "type": "string",
+              "default": "",
+              "description": "Тип изображения"
+            },
+            {
+              "name": "quality",
+              "type": "number",
+              "default": "100",
+              "description": "Качество изображения"
+            },
+            {
+              "name": "alt",
+              "type": "string",
+              "default": "",
+              "description": "Получаем описание изображения"
+            },
+            {
+              "name": "title",
+              "type": "string",
+              "default": "",
+              "description": "Получаем заголовок изображения"
+            },
+            {
+              "name": "pictureStyle",
+              "type": "string",
+              "default": "",
+              "description": "Получаем стили для изображения"
+            },
+            {
+              "name": "imgClasses",
+              "type": "string",
+              "default": "",
+              "description": "Получаем классы для картинки"
+            },
+            {
+              "name": "imgStyles",
+              "type": "string",
+              "default": "",
+              "description": "Получаем стили для картинки"
+            },
+            {
+              "name": "imgWidth",
+              "type": "string",
+              "default": "",
+              "description": "Фикс ширина изображения"
+            },
+            {
+              "name": "imgHeight",
+              "type": "string",
+              "default": "",
+              "description": "Фикс высота изображения"
+            },
+            {
+              "name": "catalogWrapper",
+              "type": "boolean",
+              "default": "false",
+              "description": ""
+            },
+            {
+              "name": "breakpoints",
+              "type": "array",
+              "default": "[]",
+              "description": "Набор точек для адаптивных изображений"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

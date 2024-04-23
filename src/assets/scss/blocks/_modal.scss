@@ -1,0 +1,137 @@
+.modal {
+  &-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(13, 41, 109, 0.9);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  &-main {
+    margin: 100px auto auto;
+    background-color: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    position: relative;
+
+    @include breakpoint(sm) {
+      padding: 20px;
+    }
+
+    &--long {
+      max-width: 680px;
+    }
+
+    &--small {
+      max-width: 400px;
+    }
+  }
+
+  &-close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    @include center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--color-link);
+  }
+
+  &-title {
+    font-size: 22px;
+    line-height: 120%;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  &-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  //
+  //&[aria-hidden="false"] {
+  //  .modal-overlay {
+  //    animation: modal-fadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+  //  }
+  //
+  //  .modal-main {
+  //    animation: modal-slideIn .3s cubic-bezier(0, 0, .2, 1);
+  //  }
+  //}
+  //
+  //&[aria-hidden="true"] {
+  //  .modal-overlay {
+  //    animation: modal-fadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+  //  }
+  //
+  //  .modal-main {
+  //    animation: modal-slideOut .3s cubic-bezier(0, 0, .2, 1);
+  //  }
+  //}
+}
+
+//@keyframes modal-fadeIn {
+//  from {
+//    opacity: 0;
+//  }
+//  to {
+//    opacity: 1;
+//  }
+//}
+//
+//@keyframes modal-fadeOut {
+//  from {
+//    opacity: 1;
+//  }
+//  to {
+//    opacity: 0;
+//  }
+//}
+//
+//@keyframes modal-slideIn {
+//  from {
+//    transform: translateY(15%);
+//  }
+//  to {
+//    transform: translateY(0);
+//  }
+//}
+//
+//@keyframes modal-slideOut {
+//  from {
+//    transform: translateY(0);
+//  }
+//  to {
+//    transform: translateY(-10%);
+//  }
+//}
+
+//.fade-enter-active,
+//.fade-leave-active {
+//  transition: opacity .1s;
+//}
+//
+//.fade-enter,
+//.fade-leave-to {
+//  opacity: 0;
+//}
+//
+//.fade-enter .modal-main {
+//  opacity: 0;
+//  transform: translateY(10px);
+//}
+//
+//.fade-leave-to .modal-main {
+//  opacity: 0;
+//  transform: translateY(-10px);
+//}

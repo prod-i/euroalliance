@@ -1,0 +1,8 @@
+{
+  "name": "nuxt-layout",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "custom"
+}

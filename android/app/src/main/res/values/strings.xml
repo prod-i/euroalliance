@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">euroalliance</string>
+    <string name="title_activity_main">euroalliance</string>
+    <string name="package_name">euroalliance</string>
+    <string name="custom_url_scheme">euroalliance</string>
+</resources>

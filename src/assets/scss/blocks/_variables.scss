@@ -1,0 +1,43 @@
+$gutter: 20px;
+
+$container: 1060px + ($gutter * 2);
+
+$breakpoints: (
+      lg: $container,
+      md: 1024px,
+      sm: 768px,
+);
+
+@mixin breakpoint($breakpoint) {
+   @if map-has-key($breakpoints, $breakpoint) {
+      @media (max-width: map-get($breakpoints, $breakpoint) - 1) {
+         @content;
+      }
+   }
+}
+
+@mixin breakpoint-min($breakpoint) {
+   @if map-has-key($breakpoints, $breakpoint) {
+      @media (min-width: map-get($breakpoints, $breakpoint)) {
+         @content;
+      }
+   }
+}
+
+@mixin hidden() {
+   display: none;
+}
+
+@mixin visible($block: block) {
+   display: $block;
+}
+
+@mixin absolute() {
+   position: absolute;
+   inset: 0;
+}
+
+@mixin center() {
+   justify-content: center;
+   align-items: center;
+}
